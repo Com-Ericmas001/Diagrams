@@ -24,11 +24,12 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels
 
         private void Init()
         {
+            UGraph.GraphElements.Add(new TextElement("Allo", 0, 0, new TextElementViewModel { Color = "Blue", TextFamily = "Comic Sans MS", TextSize = 42 }));
             UGraph.GraphElements.Add(new RectangleElement(10,10,20,20, new RectangleElementViewModel()));
             UGraph.GraphElements.Add(new ConnexionElement(
                 new Connector { Position = new Point(30, 90), Direction = ConnectorDirectionEnum.Up },
                 new Connector { Position = new Point(30, 30), Direction = ConnectorDirectionEnum.Up },
-                m_ConnectionService.GetConnectionPath, new PathElementElementViewModel()));
+                m_ConnectionService.GetConnectionPath, new PathElementElementViewModel{Color = "Red"}));
             UGraph.GraphElements.Add(new ConnexionElement(
                 new Connector { Position = new Point(60, 30), Direction = ConnectorDirectionEnum.Down },
                 new Connector { Position = new Point(60, 90), Direction = ConnectorDirectionEnum.Down },

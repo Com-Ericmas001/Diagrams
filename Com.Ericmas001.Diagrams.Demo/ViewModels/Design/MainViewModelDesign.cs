@@ -21,8 +21,20 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels.Design
             public override IElementViewModel ElementViewModel { get; }
         }
 
-        public IGraph Graph { get; } = new UpdatableGraph(new []
+        public IGraph Graph { get; } = new UpdatableGraph(new IElement[]
         {
+            new PathElement(new[]
+            {
+                new Point(10, 10),
+                new Point(50, 50),
+                new Point(90, 90),
+                new Point(90, 10),
+                new Point(50, 50),
+                new Point(10, 90)
+
+            }, new PathElementElementViewModel()),
+            new RectangleElement(10,10,20,20, new RectangleElementViewModel()),
+            new TextElement("Allo",42,42, new TextElementViewModel()), 
             new PathElement(new[]
             {
                 new Point(100, 100),

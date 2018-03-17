@@ -95,13 +95,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\TextElement.cs" />
     <Compile Include="Models\UpdatableGraph.cs" />
+    <Compile Include="Shapes\TextShape.cs" />
     <Compile Include="Util\PointsExtension.cs" />
     <Compile Include="ViewModels\Design\MainViewModelDesign.cs" />
     <Compile Include="ViewModels\Interfaces\IMainViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\RectangleElementViewModel.cs" />
     <Compile Include="ViewModels\PathElementElementViewModel.cs" />
+    <Compile Include="ViewModels\TextElementViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
