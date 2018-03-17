@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
-using Com.Ericmas001.Diagrams.Demo.Models;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
+using Com.Ericmas001.Diagrams.Xaml.Models;
 using GalaSoft.MvvmLight;
 
-namespace Com.Ericmas001.Diagrams.Demo.ViewModels
+namespace Com.Ericmas001.Diagrams.Xaml.ViewModels
 {
     public class TextElementViewModel : ViewModelBase, IElementViewModel
     {

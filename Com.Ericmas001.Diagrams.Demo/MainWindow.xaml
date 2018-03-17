@@ -3,10 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="clr-namespace:Com.Ericmas001.Diagrams.Demo.ViewModels"
-        xmlns:vmi="clr-namespace:Com.Ericmas001.Diagrams.Demo.ViewModels.Interfaces"
         xmlns:vmd="clr-namespace:Com.Ericmas001.Diagrams.Demo.ViewModels.Design"
-        xmlns:shapes="clr-namespace:Com.Ericmas001.Diagrams.Demo.Shapes"
+        xmlns:shapes="clr-namespace:Com.Ericmas001.Diagrams.Xaml.Shapes;assembly=Com.Ericmas001.Diagrams.Xaml"
+        xmlns:vm="clr-namespace:Com.Ericmas001.Diagrams.Xaml.ViewModels;assembly=Com.Ericmas001.Diagrams.Xaml"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type=vmd:MainViewModelDesign, IsDesignTimeCreatable=True}" 
         Title="MainWindow" Height="450" Width="800">

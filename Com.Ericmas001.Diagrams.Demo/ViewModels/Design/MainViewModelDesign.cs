@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
-using Com.Ericmas001.Diagrams.Demo.Models;
 using Com.Ericmas001.Diagrams.Demo.ViewModels.Interfaces;
 using Com.Ericmas001.Diagrams.Models;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
+using Com.Ericmas001.Diagrams.Xaml.Models;
+using Com.Ericmas001.Diagrams.Xaml.ViewModels;
 
 namespace Com.Ericmas001.Diagrams.Demo.ViewModels.Design
 {

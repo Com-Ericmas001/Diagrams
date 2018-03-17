@@ -1,7 +1,7 @@
-﻿using Com.Ericmas001.Diagrams.Demo.ViewModels;
-using Com.Ericmas001.Diagrams.Models.Interfaces;
+﻿using Com.Ericmas001.Diagrams.Models.Interfaces;
+using Com.Ericmas001.Diagrams.Xaml.ViewModels;
 
-namespace Com.Ericmas001.Diagrams.Demo.Models
+namespace Com.Ericmas001.Diagrams.Xaml.Models
 {
     public class TextElement : IElement
     {

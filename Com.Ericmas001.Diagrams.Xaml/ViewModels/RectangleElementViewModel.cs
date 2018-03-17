@@ -1,8 +1,7 @@
-﻿using Com.Ericmas001.Diagrams.Demo.ViewModels.Interfaces;
-using Com.Ericmas001.Diagrams.Models.Interfaces;
+﻿using Com.Ericmas001.Diagrams.Models.Interfaces;
 using GalaSoft.MvvmLight;
 
-namespace Com.Ericmas001.Diagrams.Demo.ViewModels
+namespace Com.Ericmas001.Diagrams.Xaml.ViewModels
 {
     public class RectangleElementViewModel : ViewModelBase, IElementViewModel
     {

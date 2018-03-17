@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
 
-namespace Com.Ericmas001.Diagrams.Demo.Util
+namespace Com.Ericmas001.Diagrams.Xaml.Util
 {
     public static class PointsExtension
     {

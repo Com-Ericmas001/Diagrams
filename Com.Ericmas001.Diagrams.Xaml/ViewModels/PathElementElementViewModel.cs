@@ -1,11 +1,10 @@
 ﻿using System.Windows.Media;
-using Com.Ericmas001.Diagrams.Demo.Util;
-using Com.Ericmas001.Diagrams.Demo.ViewModels.Interfaces;
 using Com.Ericmas001.Diagrams.Models;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
+using Com.Ericmas001.Diagrams.Xaml.Util;
 using GalaSoft.MvvmLight;
 
-namespace Com.Ericmas001.Diagrams.Demo.ViewModels
+namespace Com.Ericmas001.Diagrams.Xaml.ViewModels
 {
     public class PathElementElementViewModel : ViewModelBase, IElementViewModel
     {

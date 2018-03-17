@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Com.Ericmas001.Diagrams.Models;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
 using GalaSoft.MvvmLight;
 
-namespace Com.Ericmas001.Diagrams.Demo.Models
+namespace Com.Ericmas001.Diagrams.Xaml.Models
 {
     public class UpdatableGraph : ViewModelBase, IGraph
     {
