@@ -14,6 +14,9 @@
         <releaseNotes>Development Version</releaseNotes>
         <copyright />
         <language>en</language>
+        <dependencies>
+            <dependency id="Com.Ericmas001.DependencyInjection" version="0.0.1" />
+        </dependencies>
     </metadata>
     <files>
     	<file src="Com.Ericmas001.Diagrams\bin\$configuration$\Com.Ericmas001.Diagrams.dll" target="lib\net40\" />
