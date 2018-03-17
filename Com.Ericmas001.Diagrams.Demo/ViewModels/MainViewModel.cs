@@ -57,6 +57,22 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels
                 new Connector { Position = new Point(320, 100), Direction = ConnectorDirectionEnum.Left },
                 new Connector { Position = new Point(260, 70), Direction = ConnectorDirectionEnum.Left },
                 m_ConnectionService.GetConnectionPath, new PathElementElementViewModel()));
+            UGraph.GraphElements.Add(new ConnexionElement(
+                new Connector { Position = new Point(340, 10), Direction = ConnectorDirectionEnum.Down },
+                new Connector { Position = new Point(400, 40), Direction = ConnectorDirectionEnum.Down },
+                m_ConnectionService.GetConnectionPath, new PathElementElementViewModel()));
+            UGraph.GraphElements.Add(new ConnexionElement(
+                new Connector { Position = new Point(340, 100), Direction = ConnectorDirectionEnum.Up },
+                new Connector { Position = new Point(400, 70), Direction = ConnectorDirectionEnum.Up },
+                m_ConnectionService.GetConnectionPath, new PathElementElementViewModel()));
+            UGraph.GraphElements.Add(new ConnexionElement(
+                new Connector { Position = new Point(480, 10), Direction = ConnectorDirectionEnum.Down },
+                new Connector { Position = new Point(420, 40), Direction = ConnectorDirectionEnum.Down },
+                m_ConnectionService.GetConnectionPath, new PathElementElementViewModel()));
+            UGraph.GraphElements.Add(new ConnexionElement(
+                new Connector { Position = new Point(480, 100), Direction = ConnectorDirectionEnum.Up },
+                new Connector { Position = new Point(420, 70), Direction = ConnectorDirectionEnum.Up },
+                m_ConnectionService.GetConnectionPath, new PathElementElementViewModel()));
         }
     }
 }

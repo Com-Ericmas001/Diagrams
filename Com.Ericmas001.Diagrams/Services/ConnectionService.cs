@@ -30,6 +30,12 @@ namespace Com.Ericmas001.Diagrams.Services
                     yield return new Point(start.X + halfDeltaX, start.Y);
                     yield return new Point(start.X + halfDeltaX, end.Y);
                 }
+                if (dirStart == ConnectorDirectionEnum.Up || dirStart == ConnectorDirectionEnum.Down)
+                {
+                    var halfDeltaY = (end.Y - start.Y) / 2;
+                    yield return new Point(start.X, start.Y + halfDeltaY);
+                    yield return new Point(end.X, start.Y + halfDeltaY);
+                }
             }
 
             yield return end;
