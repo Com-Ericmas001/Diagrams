@@ -34,8 +34,7 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels.Design
                 new Point(10, 90)
 
             }, new PathElementElementViewModel()),
-            new RectangleElement(10,10,20,20, new RectangleElementViewModel()),
-            new TextElement("Allo",42,42, new TextElementViewModel()), 
+            new RectangleElement(50,10,60,20, new RectangleElementViewModel()),
             new PathElement(new[]
             {
                 new Point(100, 100),
@@ -46,7 +45,8 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels.Design
                 new Point(200, 100),
                 new Point(100, 100),
 
-            }, new PathElementElementViewModel())
+            }, new PathElementElementViewModel()),
+            new TextElement("Allo",142,42, new TextElementViewModel{Color = "Red"})
         });
     }
 }

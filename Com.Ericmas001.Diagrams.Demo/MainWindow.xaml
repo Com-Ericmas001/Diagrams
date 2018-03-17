@@ -4,29 +4,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vmd="clr-namespace:Com.Ericmas001.Diagrams.Demo.ViewModels.Design"
-        xmlns:shapes="clr-namespace:Com.Ericmas001.Diagrams.Xaml.Shapes;assembly=Com.Ericmas001.Diagrams.Xaml"
-        xmlns:vm="clr-namespace:Com.Ericmas001.Diagrams.Xaml.ViewModels;assembly=Com.Ericmas001.Diagrams.Xaml"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type=vmd:MainViewModelDesign, IsDesignTimeCreatable=True}" 
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ItemsControl ItemsSource="{Binding Graph.Elements}" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <ItemsControl.Resources>
-                <DataTemplate DataType="{x:Type vm:PathElementElementViewModel}">
-                    <Path Stroke="{Binding Color}" Fill="{Binding Color}" StrokeThickness="1.0" Data="{Binding Geometry}"/>
-                </DataTemplate>
-                <DataTemplate DataType="{x:Type vm:RectangleElementViewModel}">
-                    <Rectangle Canvas.Top="{Binding Element.Top}" Canvas.Left="{Binding Element.Left}" Stroke="{Binding Color}" Fill="{Binding Color}" StrokeThickness="1" Width="{Binding Element.Width}" Height="{Binding Element.Height}" />
-                </DataTemplate>
-                <DataTemplate DataType="{x:Type vm:TextElementViewModel}">
-                    <shapes:TextShape Canvas.Top="{Binding Element.Top}" Canvas.Left="{Binding Element.Left}"  Text="{Binding Text, Mode=OneWay}" TextFamily="{Binding TextFamily}" Foreground="{Binding Color}" TextSize="{Binding TextSize}" />
-                </DataTemplate>
-            </ItemsControl.Resources>
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <Canvas Width="{Binding Graph.Width}" Height="{Binding Graph.Height}" />
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-        </ItemsControl>
-    </Grid>
+    <ItemsControl ItemsSource="{Binding Graph.Elements}" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <ItemsControl.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="/Com.Ericmas001.Diagrams.Xaml;component/Ressources/ElementsDataTemplate.xaml"/>
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </ItemsControl.Resources>
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <Canvas Width="{Binding Graph.Width}" Height="{Binding Graph.Height}" />
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+    </ItemsControl>
 </Window>

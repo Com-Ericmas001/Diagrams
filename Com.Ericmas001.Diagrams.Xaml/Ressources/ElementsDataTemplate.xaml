@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:Com.Ericmas001.Diagrams.Xaml.ViewModels"
+                    xmlns:shapes="clr-namespace:Com.Ericmas001.Diagrams.Xaml.Shapes">
+    <DataTemplate DataType="{x:Type vm:PathElementElementViewModel}">
+        <Path Stroke="{Binding Color}" Fill="{Binding Color}" StrokeThickness="1.0" Data="{Binding Geometry}"/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:RectangleElementViewModel}">
+        <Rectangle Stroke="{Binding Color}" Fill="{Binding Color}" StrokeThickness="1" Width="{Binding Element.Width}" Height="{Binding Element.Height}">
+            <Rectangle.RenderTransform>
+                <TranslateTransform X="{Binding Element.Left}" Y="{Binding Element.Top}"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:TextElementViewModel}">
+        <shapes:TextShape Text="{Binding Text, Mode=OneWay}" TextFamily="{Binding TextFamily}" Foreground="{Binding Color}" TextSize="{Binding TextSize}" >
+            <shapes:TextShape.RenderTransform>
+                <TranslateTransform X="{Binding Element.Left}" Y="{Binding Element.Top}"/>
+            </shapes:TextShape.RenderTransform>
+        </shapes:TextShape>
+    </DataTemplate>
+</ResourceDictionary>

@@ -25,8 +25,8 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels
 
         private void Init()
         {
-            UGraph.GraphElements.Add(new TextElement("Allo", 0, 0, new TextElementViewModel { Color = "Blue", TextFamily = "Comic Sans MS", TextSize = 42 }));
-            UGraph.GraphElements.Add(new RectangleElement(10,10,20,20, new RectangleElementViewModel()));
+            UGraph.GraphElements.Add(new TextElement("Allo", 100, 100, new TextElementViewModel { TextSize = 48 }));
+            UGraph.GraphElements.Add(new RectangleElement(310, 50, 320, 60, new RectangleElementViewModel{Color = "Blue"}));
             UGraph.GraphElements.Add(new ConnexionElement(
                 new Connector { Position = new Point(30, 90), Direction = ConnectorDirectionEnum.Up },
                 new Connector { Position = new Point(30, 30), Direction = ConnectorDirectionEnum.Up },
