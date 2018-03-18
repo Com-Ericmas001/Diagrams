@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:vm="clr-namespace:Com.Ericmas001.Diagrams.Xaml.ViewModels"
+                    x:Class="Com.Ericmas001.Diagrams.Xaml.Ressources.ElementsDataTemplate"
                     xmlns:shapes="clr-namespace:Com.Ericmas001.Diagrams.Xaml.Shapes">
     <DataTemplate DataType="{x:Type vm:PathElementElementViewModel}">
         <Path Stroke="{Binding Color}" Fill="{Binding Color}" StrokeThickness="1.0" Data="{Binding Geometry}"/>

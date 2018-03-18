@@ -4,14 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vmd="clr-namespace:Com.Ericmas001.Diagrams.Demo.ViewModels.Design"
+        xmlns:ress="clr-namespace:Com.Ericmas001.Diagrams.Xaml.Ressources;assembly=Com.Ericmas001.Diagrams.Xaml"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type=vmd:MainViewModelDesign, IsDesignTimeCreatable=True}" 
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="1000">
     <ItemsControl ItemsSource="{Binding Graph.Elements}" HorizontalAlignment="Center" VerticalAlignment="Center">
         <ItemsControl.Resources>
             <ResourceDictionary>
                 <ResourceDictionary.MergedDictionaries>
-                    <ResourceDictionary Source="/Com.Ericmas001.Diagrams.Xaml;component/Ressources/ElementsDataTemplate.xaml"/>
+                    <x:Static Member="ress:ElementsDataTemplate.Instance"/>
                 </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
         </ItemsControl.Resources>
