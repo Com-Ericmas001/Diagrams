@@ -20,4 +20,13 @@
             </shapes:TextShape.RenderTransform>
         </shapes:TextShape>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:GraphElementViewModel}">
+        <ItemsControl ItemsSource="{Binding Element.Elements}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas Width="{Binding Element.Width}" Height="{Binding Element.Height}" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </DataTemplate>
 </ResourceDictionary>

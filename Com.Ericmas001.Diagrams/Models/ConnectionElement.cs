@@ -6,9 +6,9 @@ using Com.Ericmas001.Diagrams.Models.Interfaces;
 
 namespace Com.Ericmas001.Diagrams.Models
 {
-    public class ConnexionElement : AbstractPathElement
+    public class ConnectionElement : AbstractPathElement
     {
-        public ConnexionElement(Connector start, Connector end, Func<Connector,Connector,IEnumerable<IPoint>> generateFunc, IElementViewModel elementViewModel)
+        public ConnectionElement(IConnector start, IConnector end, Func<IConnector, IConnector,IEnumerable<IPoint>> generateFunc, IElementViewModel elementViewModel)
         {
             ElementViewModel = elementViewModel;
             elementViewModel.Element = this;

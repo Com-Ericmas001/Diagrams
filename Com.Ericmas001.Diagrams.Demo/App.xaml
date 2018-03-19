@@ -2,4 +2,13 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" d1P1:Ignorable="d" 
-             xmlns:d1P1="http://schemas.openxmlformats.org/markup-compatibility/2006"/>
+             xmlns:d1P1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ress="clr-namespace:Com.Ericmas001.Diagrams.Xaml.Ressources;assembly=Com.Ericmas001.Diagrams.Xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <x:Static Member="ress:ElementsDataTemplate.Instance"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

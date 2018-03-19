@@ -2,14 +2,16 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
+using Com.Ericmas001.Diagrams.Xaml.ViewModels;
 using GalaSoft.MvvmLight;
 
 namespace Com.Ericmas001.Diagrams.Xaml.Models
 {
     public class UpdatableGraph : ViewModelBase, IGraph
     {
-
-        public IEnumerable<IElementViewModel> Elements => GraphElements.Select(x => x.ElementViewModel).ToArray(); public double Left => 0;
+        public IEnumerable<IElementViewModel> Elements => GraphElements.Select(x => x.ElementViewModel).ToArray();
+        public IElementViewModel ElementViewModel { get; }
+        public double Left => 0;
         public double Right => GraphElements.Select(x => x.Right).Max();
         public double Top => 0;
         public double Bottom => GraphElements.Select(x => x.Bottom).Max();
@@ -20,6 +22,7 @@ namespace Com.Ericmas001.Diagrams.Xaml.Models
 
         public UpdatableGraph(IEnumerable<IElement> elements = null)
         {
+            ElementViewModel = new GraphElementViewModel {Element = this};
             GraphElements = new ObservableCollection<IElement>();
 
             if (elements != null)

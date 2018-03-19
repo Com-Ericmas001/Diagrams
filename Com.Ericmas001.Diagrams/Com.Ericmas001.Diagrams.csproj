@@ -51,7 +51,7 @@
     <Compile Include="Enum\ConnectorDirectionEnum.cs" />
     <Compile Include="Models\Interfaces\IElementViewModel.cs" />
     <Compile Include="Models\RectangleElement.cs" />
-    <Compile Include="Models\ConnexionElement.cs" />
+    <Compile Include="Models\ConnectionElement.cs" />
     <Compile Include="Models\Interfaces\IConnector.cs" />
     <Compile Include="Models\Interfaces\IElement.cs" />
     <Compile Include="Models\Interfaces\IGraph.cs" />

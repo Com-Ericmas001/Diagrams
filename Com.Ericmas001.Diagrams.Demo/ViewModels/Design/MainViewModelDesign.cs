@@ -46,7 +46,7 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels.Design
                 new Point(100, 100),
 
             }, new PathElementElementViewModel()),
-            new TextElement("Allo",142,42, new TextElementViewModel{Color = "Red"})
+            new TextElement("Hello World",142,42, new TextElementViewModel{Color = "Red"})
         });
     }
 }

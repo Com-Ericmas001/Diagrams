@@ -73,7 +73,8 @@ namespace Com.Ericmas001.Diagrams.Xaml.Shapes
                     FontWeights.Bold,
                     new FontStretch()),
                 TextSize,
-                new SolidColorBrush(Foreground));
+                new SolidColorBrush(Foreground))
+                { TextAlignment = TextAlignment.Center };
             drawingContext.DrawText
                 (ft, new Point(0, 0));
             //base.OnRender(drawingContext);

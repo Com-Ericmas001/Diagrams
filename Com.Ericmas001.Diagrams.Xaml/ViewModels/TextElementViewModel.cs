@@ -24,7 +24,7 @@ namespace Com.Ericmas001.Diagrams.Xaml.ViewModels
                 FontWeights.Bold,
                 new FontStretch()),
             TextSize,
-            Brushes.Black);
+            Brushes.Black){TextAlignment = TextAlignment.Center};
 
         public float TextSize
         {
