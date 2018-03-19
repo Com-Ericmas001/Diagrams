@@ -18,6 +18,8 @@
                     or Install via VS <a href="https://docs.nuget.org/consume/package-manager-dialog" target="_blank">Package Management</a> window.
                 </div>
             </td>
+        </tr>
+        <tr>
             <td rowspan>.Net</td>
             <td align="center">
             <a href="https://www.nuget.org/packages/Com.Ericmas001.Diagrams.Xaml/" target="_blank">
