@@ -246,6 +246,17 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels
             {
                 route2Step6.ElementViewModel.Color = "Green";
             });
+
+            m_Steps.Enqueue(() =>
+            {
+                var route1Step34 = FlowGraph.AddElementToRightOf(route1Step3, new FlowStepElement(690, 240, "Dummy", "Red"), "Red");
+                foreach (var conn in route1Step4.ConnectionsIn.ToArray())
+                {
+                    FlowGraph.GraphElements.Remove(conn);
+                    route1Step4.ConnectionsIn.Remove(conn);
+                    FlowGraph.ConnectToTheRightOf(route1Step34, route1Step4,"Red");
+                }
+            });
         }
     }
 }
