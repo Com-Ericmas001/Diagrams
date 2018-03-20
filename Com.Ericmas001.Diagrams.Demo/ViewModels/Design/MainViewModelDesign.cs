@@ -4,6 +4,7 @@ using Com.Ericmas001.Diagrams.Models;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
 using Com.Ericmas001.Diagrams.Xaml.Models;
 using Com.Ericmas001.Diagrams.Xaml.ViewModels;
+using GalaSoft.MvvmLight.CommandWpf;
 
 namespace Com.Ericmas001.Diagrams.Demo.ViewModels.Design
 {
@@ -48,5 +49,7 @@ namespace Com.Ericmas001.Diagrams.Demo.ViewModels.Design
             }, new PathElementElementViewModel()),
             new TextElement("Hello World",142,42, new TextElementViewModel{Color = "Red"})
         });
+
+        public RelayCommand NextStepCommand => new RelayCommand(() => { });
     }
 }

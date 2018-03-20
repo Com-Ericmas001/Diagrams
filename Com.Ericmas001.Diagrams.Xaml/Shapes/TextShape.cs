@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.ComponentModel;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -60,6 +61,11 @@ namespace Com.Ericmas001.Diagrams.Xaml.Shapes
         }
 
         protected override Geometry DefiningGeometry => Geometry.Empty;
+
+        public override void EndInit()
+        {
+            ((INotifyPropertyChanged)DataContext).PropertyChanged += (sender, args) => InvalidateVisual();
+        }
 
         protected override void OnRender
             (DrawingContext drawingContext)

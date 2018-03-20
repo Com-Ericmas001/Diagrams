@@ -9,6 +9,7 @@ namespace Com.Ericmas001.Diagrams.Xaml.ViewModels
 {
     public class TextElementViewModel : ViewModelBase, IElementViewModel
     {
+        private string m_Text = string.Empty;
         private string m_Color = "Black";
         private float m_TextSize = 12;
         private string m_TextFamily = "Arial";
@@ -31,7 +32,11 @@ namespace Com.Ericmas001.Diagrams.Xaml.ViewModels
             get => m_TextSize;
             set => Set(ref m_TextSize, value);
         }
-        public string Text => ((TextElement)Element).Text;
+        public string Text
+        {
+            get => m_Text;
+            set => Set(ref m_Text, value);
+        }
 
         public string TextFamily
         {

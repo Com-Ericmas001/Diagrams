@@ -7,5 +7,8 @@
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type=vmd:MainViewModelDesign, IsDesignTimeCreatable=True}" 
         Title="MainWindow" Height="450" Width="1200">
-    <ContentPresenter Content="{Binding Graph.ElementViewModel}"/>
+    <DockPanel>
+        <Button HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="10" Command="{Binding NextStepCommand}">One More Step</Button>
+        <ContentPresenter Content="{Binding Graph.ElementViewModel}"/>
+    </DockPanel>
 </Window>
