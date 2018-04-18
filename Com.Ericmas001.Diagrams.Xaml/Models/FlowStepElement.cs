@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Com.Ericmas001.Diagrams.Enum;
 using Com.Ericmas001.Diagrams.Models;
 using Com.Ericmas001.Diagrams.Models.Interfaces;

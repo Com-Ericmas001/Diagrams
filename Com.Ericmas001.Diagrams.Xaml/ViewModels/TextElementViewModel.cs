@@ -2,7 +2,6 @@
 using System.Windows;
 using System.Windows.Media;
 using Com.Ericmas001.Diagrams.Models.Interfaces;
-using Com.Ericmas001.Diagrams.Xaml.Models;
 using GalaSoft.MvvmLight;
 
 namespace Com.Ericmas001.Diagrams.Xaml.ViewModels

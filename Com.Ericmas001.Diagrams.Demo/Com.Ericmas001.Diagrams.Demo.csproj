@@ -33,14 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Com.Ericmas001.DependencyInjection, Version=0.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Com.Ericmas001.DependencyInjection.0.0.3\lib\net40\Com.Ericmas001.DependencyInjection.dll</HintPath>
+    <Reference Include="Com.Ericmas001.DependencyInjection, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.Ericmas001.DependencyInjection.0.1.0\lib\net40\Com.Ericmas001.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="Com.Ericmas001.DependencyInjection.Unity, Version=0.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Com.Ericmas001.DependencyInjection.Unity.0.0.3\lib\net45\Com.Ericmas001.DependencyInjection.Unity.dll</HintPath>
+    <Reference Include="Com.Ericmas001.DependencyInjection.Unity, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.Ericmas001.DependencyInjection.Unity.0.1.0\lib\net45\Com.Ericmas001.DependencyInjection.Unity.dll</HintPath>
     </Reference>
     <Reference Include="CommonServiceLocator, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLocator.2.0.3\lib\net45\CommonServiceLocator.dll</HintPath>
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\CommonServiceLocator.dll</HintPath>
     </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.4.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
@@ -66,25 +66,25 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.7.3\lib\net45\Unity.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\Unity.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Configuration, Version=5.2.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.7.3\lib\net45\Unity.Configuration.dll</HintPath>
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\Unity.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Container, Version=5.7.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.7.3\lib\net45\Unity.Container.dll</HintPath>
+    <Reference Include="Unity.Container, Version=5.8.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\Unity.Container.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.7.3\lib\net45\Unity.Interception.dll</HintPath>
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\Unity.Interception.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Interception.Configuration, Version=5.1.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.7.3\lib\net45\Unity.Interception.Configuration.dll</HintPath>
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\Unity.Interception.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RegistrationByConvention, Version=2.1.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.7.3\lib\net45\Unity.RegistrationByConvention.dll</HintPath>
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\Unity.RegistrationByConvention.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.7.3\lib\net45\Unity.ServiceLocation.dll</HintPath>
+      <HintPath>..\packages\Unity.5.8.5\lib\net45\Unity.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />

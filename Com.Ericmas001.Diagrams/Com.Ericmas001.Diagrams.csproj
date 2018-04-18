@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Com.Ericmas001.DependencyInjection, Version=0.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Com.Ericmas001.DependencyInjection.0.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Com.Ericmas001.DependencyInjection.dll</HintPath>
+    <Reference Include="Com.Ericmas001.DependencyInjection, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.Ericmas001.DependencyInjection.0.1.0\lib\portable-net40+sl5+wp80+win8+wpa81\Com.Ericmas001.DependencyInjection.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,7 +58,7 @@
     <Compile Include="Models\Interfaces\IPoint.cs" />
     <Compile Include="Models\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServicesRegistrant.cs" />
+    <Compile Include="DiagramsRegistrant.cs" />
     <Compile Include="Services\ConnectionService.cs" />
     <Compile Include="Services\Interfaces\IConnectionService.cs" />
   </ItemGroup>

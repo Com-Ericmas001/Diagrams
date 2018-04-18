@@ -13,7 +13,7 @@ namespace Com.Ericmas001.Diagrams.Demo
         {
             Container = container ?? new UnityContainer();
 
-            new ServicesRegistrant().RegisterTypes(Container);
+            new DiagramsRegistrant().RegisterTypes(Container);
 
             Container.RegisterType<IMainViewModel, MainViewModel>();
 
